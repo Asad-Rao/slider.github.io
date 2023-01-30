@@ -1048,9 +1048,8 @@ width: 16%;
 
 .carousel_actions
 {
-
-  width:inherit;
-  max-width:inherit;
+width: inherit;
+max-width: inherit;
 position: fixed;
 top: 300px;
 z-index: 1;
@@ -1059,18 +1058,7 @@ align-items: center;
 justify-content: space-between;
 
 }
-/* @media screen and (min-width: 480px){
-  .section2top
-  {
-  width: 100%px;
-  margin: auto;
-  }
-} */
-.section2top
-{
-width: 1300px;
-margin: auto;
-}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
