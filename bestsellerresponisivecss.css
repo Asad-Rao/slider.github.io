@@ -931,7 +931,7 @@ margin: auto;
   flex-direction: column;
   font-family: Poppins-Light;
   font-size: 14px;
-padding-inline: 150px;
+margin-inline: 10%;
 padding-block: 35px;
 }
 @media only screen and (max-width: 767px) {
@@ -1048,16 +1048,16 @@ width: 16%;
 
 .carousel_actions
 {
-width: inherit;
-max-width: inherit;
-position: fixed;
-top: 300px;
-z-index: 1;
+width: 100%;
+position: absolute;
+top: 10rem;
+
 display: flex;
 align-items: center;
 justify-content: space-between;
 
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -1092,11 +1092,9 @@ justify-content: space-between;
 }
 
 .carouseladjustment {
+  max-width: 1700px;
   display: flex;
 flex-direction: row;
-width: 100%;
 justify-content: space-between;
 flex-wrap: wrap;
-/* margin: 2% auto; */
-
 }
