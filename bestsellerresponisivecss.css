@@ -1090,3 +1090,13 @@ justify-content: space-between;
 .dot:hover {
   background-color: #ff0000;
 }
+
+.carouseladjustment {
+  display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: space-between;
+flex-wrap: wrap;
+/* margin: 2% auto; */
+
+}
