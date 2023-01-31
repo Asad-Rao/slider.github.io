@@ -1,1149 +1,411 @@
-  @import url("fontcssyoutube.css");
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-
-    margin: 0;
-    padding: 0;
-    max-width: auto;
-    margin: 0 auto;
-  }
-
-  .section1top {
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 30px;
-  }
-
-  /*****************************NAV BAR CSS****************/
-  .logo {
-    display: flex;
-    width: fit-content;
-    cursor: pointer;
-
-  }
-  
-
-
-  .logoimage {
-    max-width: 70%;
-  }
-
-  .iconsimages {
-    max-width: 16%;
-  }
-
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #nav-id {
-    padding-block: 30px;
-  }
-
-  .hamburger-menu {
-    display: none;
-  }
-
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    width: fit-content;
-    align-items: center;
-    cursor: pointer;
-
-  }
-
-  .nav-items {
-    display: flex;
-    list-style: none;
-    width: fit-content;
-    cursor: pointer;
-  }
-
-
-
-  .nav-items li {
-    margin: 0 10px;
-    font-size: 13px;
-
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .nav-items li a {
-    text-decoration: none;
-    color: black;
-
-  }
-
-  .container {
-    display: none;
-
-  }
-
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 20px;
-    height: 1px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .change1 {
-    transform: translate(0, 8px) rotate(-45deg);
-  }
-
-  .change2 {
-    opacity: 0;
-  }
-
-  .change3 {
-    transform: translate(0, -8px) rotate(45deg);
-  }
-
-  .middleicon {
-    margin-inline: 6px;
-  }
-
-  @media screen and (max-width:767px) {
-
-    #nav-id {
-      padding-block: 15px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    .logolink
-    {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-    }
-
-
-    .iconsimages {
-      max-width: 17%;
-    }
-
-
-    .navbarclass {
-      background-color: #ffffff;
-
-    }
-
-    .logo {
-      display: flex;
-      justify-content: center;
-      margin: auto;
-    }
-
-    .logoimage {
-      max-width: 60%;
-    }
-
-    .icons {
-      display: flex;
-      padding-inline-end: 25px;
-    }
-
-    .nav-items {
-      display: none;
-      width: 100%;
-      position: absolute;
-      top: 58px;
-      bottom: 0;
-      height: 100vh;
-
-    }
-
-    .nav-items,
-    #nav-id {
-      background-color: #ffffff;
-    }
-
-    .nav-items li {
-      margin: 0;
-      /* padding-block:11.2% */
-      font-size: 12px;
-      padding: 10px 0;
-      /* margin: 0 2rem; */
-    }
-
-    .container {
-      display: inline-block;
-      padding-inline-start: 25px;
-    }
-
-    .bar1,
-    .bar3 {
-      width: 20px;
-      height: 2px;
-      background-color: #333;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-
-    .bar2 {
-      width: 15px;
-      height: 2px;
-      background-color: #333;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-
-    .displayblock {
-      opacity: 0;
-      transition: opacity 2s;
-      transition-property: opacity;
-    }
-
-    .nav-items li {
-      padding-left: 25px;
-    }
-
-  }
-
-  /*********************************************************/
-
-  #backgroundtopsection {
-    background-image: url("images/darkshade.png"), url("images/topbackground.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    padding-block-end: 2%;
-    padding-block-start: 1%;
-
-  }
-
-  .heading {
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Poppins-SemiBold;
-    color: black;
-    letter-spacing: 1.2px;
-    width: 100%;
-  }
-
-  /**********************************AFTER NAVIGATION******************/
-  .rowtopsection {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* margin: 2% auto; */
-
-  }
-
-  .column1 {
-    font-family: Poppins-Light;
-    width: 50%;
-    margin: auto 0;
-
-  }
-
-  .shopoutlets {
-    font-size: 13px;
-    /* mag */
-    font-family: Poppins-Light;
-    margin: 3.5% 0;
-
-  }
-
-  .quality {
-    font-size: 21px;
-    font-weight: 100;
-    font-family: Poppins-Light;
-  }
-
-
-
-  .cheapproducts {
-    font-size: 45px;
-    font-family: Poppins-ExtraBold;
-
-  }
-
-  .cheapandeasy {
-    font-size: 13px;
-    ;
-
-  }
-
-  .textspacing {
-    margin: 3.5% 0;
-  }
-
-  .collection {
-    font-size: 12px;
-    font-family: "Poppins-Light";
-    padding: 2.5% 4%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-    border: 1px solid rgb(255, 0, 0);
-
-  }
-
-
-  /********************************************************/
-
-  /**********************Image Stacking*******************/
-  .column2 {
-    margin: 0 auto;
-    width: 50%;
-    
-  }
-
-  .child {
-    width: 100%;
-    display: block;
-  }
-  .laptops
-  {object-fit: cover;
-
-  }
-
-  @media only screen and (max-width: 767px) {
-    .column1 {
-
-      width: 100%;
-      text-align: center;
-
-    }
-
-    .column2 {
-
-      width: 100%;
-
-
-    }
-
-
-  }
-
-
-  /*******************END OF IMAGE STACKING*****************/
-
-  /*************** RESPONSIVE FEATURE PRODUCT******************/
-  .bestsellerrow {
-    display: flex;
-    height: auto;
-
-    flex-direction: row;
-    /* border: 1px solid black; */
-    /* justify-content: space-between; */
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 2.66%;
-    row-gap: 2rem;
-    margin: 2% auto;
-    max-width: 1300px;
-
-  }
-
-  .col-3 {
-
-    width: 23%;
-  }
-
-  .imagesbestseller {
-    width: 100%;
-    display: block;
-
-  }
-
-  .seller-text {
-
-    font-size: 11px;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .sales {
-    font-size: 9.5px;
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .details {
-    text-align: left;
-    padding-block-start: 8%;
-  }
-
-  .stars {
-    width: 22%;
-  }
-
-  .price {
-    font-size: 14px;
-    font-family: Poppins-SemiBold;
-
-  }
-
-  /* 
-    Smallest modile Device consider be 200px
-    Largest mobile device consider be 767px */
-  /* 600-800px Tablet */
-
-  .READMORE {
-    font-size: 12px;
-    color: rgb(0, 0, 0);
-    font-family: Poppins-Light;
-    background-color: rgb(255, 255, 255);
-    padding: 13px 27.297px;
-    border-width: 2px;
-    display: inline-block;
-    width: fit-content;
-    cursor: pointer;
-  }
-
-  #featuresection {
-    margin: 4% auto;
-  }
-
-  #bestsellersection {
-    margin: 4% auto;
-
-  }
-
-
-
-
-  @media screen and (max-width:767px) {
-
-    .col-3 {
-
-      width: 100%;
-      border: 1px solid black;
-
-    }
-
-    .imagesbestseller {
-      width: 100%;
-      object-fit: cover;
-      height: auto;
-    }
-
-    .details {
-      width: 100%;
-      text-align: center;
-    }
-
-    .rowtopsection {
-      padding-block: 100px;
-    }
-
-    .seller-text {
-      white-space: wrap;
-
-      /* font-size: 2vh; */
-      font-family: 'Poppins', sans-serif;
-
-    }
-
-    .sales {
-      /* font-size: 2vh; */
-      display: block;
-      font-family: 'Poppins', sans-serif;
-    }
-  }
-
-  /******************************************************/
-
-  .rowfeature {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 2% auto;
-    flex-wrap: wrap;
-    gap: 4.505%;
-  }
-
-  .col-4 {
-    width: 30.33%;
-    border: 1px solid black;
-    position: relative;
-  }
-
-  .text-button {
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-    position: absolute;
-    bottom: 15px;
-    /* left: 83.4765;
-    right: 83.4765px; */
-  }
-
-  .featureimage {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    display: block;
-  }
-
-  .card-text {
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-family: Poppins-SemiBold;
-    font-size: 14px;
-    font-weight: lighter;
-  }
-
-
-  .buynow {
-    font-size: 13px;
-    color: white;
-    font-family: Poppins-SemiBold;
-    background-color: black;
-    padding: 1.7% 9.5%;
-    margin-block-start: 2%;
-    outline-style: none;
-    border-width: 1px;
-    cursor: pointer;
-  }
-
-
-  @media screen and (max-width:767px) {
-
-    .col-4 {
-      width: 100%;
-      border: 1px solid black;
-      margin-block: 20px;
-    }
-
-    .card-text {
-      text-align: center;
-      text-transform: uppercase;
-      color: rgb(255, 255, 255);
-      font-family: Poppins-SemiBold;
-      /* font-size: 2vh; */
-    }
-
-    .buynow {
-      /* font-size: 2vh; */
-      color: white;
-      font-family: Poppins-SemiBold;
-      background-color: black;
-      padding: 3% 7%;
-      margin-block-start: 2%;
-
-    }
-
-    .text-button {
-      width: 100%;
-      text-align: center;
-      white-space: nowrap;
-      position: absolute;
-      bottom: 15px;
-      /* left: 83.4765;
-      right: 83.4765px; */
-    }
-
-    .featureimage {
-
-      display: block;
-    }
-
-  }
-
-  /******************************************************/
-
-  .pagewidth {
-    max-width: 1700px;
-    margin: auto;
-  }
-
-  #aboutoutletssection {
-    background-image: url("images/AboutOutletsBackground.png");
-    background-repeat: no-repeat no-repeat;
-    background-size: 100% 100%;
-    padding-block: 4%;
-
-  }
-
-  .aboutoutletsrow {
-    display: flex;
-    flex-direction: row;
-
-    width: 100%;
-    margin: 2% auto;
-    /* border: 1px solid black; */
-
-    background-color: white;
-
-
-  }
-
-  .rightoutlets {
-    width: 50%;
-  }
-
-  .outletsimage {
-
-
-    width: 100%;
-    display: block;
-  }
-
-  .aboutoutletswelcome {
-    font-size: 15px;
-    font-family: Poppins-Bold;
-
-  }
-
-  .col-text {
-    width: 50%;
-    font-size: 15px;
-    font-family: Poppins-Light;
-    background-color: white;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
-
-  }
-
-  .aboutoutletstext {
-    font-size: 12px;
-    line-height: 1.8;
-    margin-block: 3%;
-
-  }
-
-
-  .VIEWMORE {
-    font-size: 12px;
-    color: rgb(0, 0, 0);
-    font-family: Poppins-Light;
-    background-color: rgb(255, 255, 255);
-    padding: 1% 2.1%;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width:767px) {
-
-
-    .aboutoutletsrow {
-      flex-wrap: wrap;
-    }
-
-    .rightoutlets {
-
-      width: 100%;
-      text-align: center;
-    }
-
-    .outletsimage {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    .col-text {
-      text-align: center;
-      width: 100%;
-
-    }
-
-    .READMORE {
-      margin: auto;
-    }
-
-
-  }
-
-  /****************************************************/
-
-  .footer-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    flex-wrap: wrap;
-    padding-block-start: 3.5%;
-  }
-
-  /*********************************************************/
-  .footerlogo {
-
-    cursor: pointer;
-    max-width: 70%;
-  }
-
-  .feelingsocialimages {
-    max-width: 50%;
-
-    cursor: pointer;
-  }
-
-  .footercolum1 {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-  }
-
-  .footercolum2 {
-    width: fit-content;
-  }
-
-  .footercolum3 {
-    width: fit-content;
-  }
-
-  .footercolum4 {
-    width: fit-content
-  }
-
-  input {
-    size: "25";
-    text-align: left;
-    font-size: 7px;
-
-
-  }
-
-  .subscribe {
-    font-size: 12px;
-    font-family: "Poppins-SemiBold";
-    cursor: pointer;
-  }
-
-  .main-ul {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255);
-    line-height: 2.7;
-    cursor: pointer;
-  }
-
-  .ulfooter {
-    list-style: none;
-    line-height: 1.7;
-    cursor: pointer;
-  }
-
-  .anchor-footer {
-    text-decoration-line: none;
-    color: rgb(199, 199, 199);
-  }
-
-  .footermainul {
-    font-size: 17px;
-
-
-  }
-
-  ::placeholder {
-    font-size: 13px;
-    font-family: "Poppins-Light";
-    margin-inline-start: 20px;
-  }
-
-  input[type=text] {
-
-    padding: 9px 0px;
-    border-radius: 0;
-    box-sizing: border-box;
-  }
-
-  form {
-    display: inline-flex;
-  }
-
-  .lifooter {
-    font-family: "Poppins-Light";
-    font-size: 14px;
-  }
-
-  .bottom {
-    font-family: "Poppins-Light";
-    font-size: 13px;
-    color: rgb(199, 199, 199);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-block: 1%;
-  }
-
-  .copyimage {
-    max-width: 18%;
-    cursor: pointer;
-  }
-
-  .copyright {
-    width: fit-content;
-  }
-
-  /********************************************************/
-
-  @media screen and (max-width:767px) {
-
-    .footercolumn {
-      width: 100%;
-      text-align: center;
-      justify-content: center;
-    }
-
-    .copyright,
-    copyimage {
-      width: 100%;
-      text-align: center;
-    }
-
-    .bottom {
-      justify-content: center;
-
-    }
-
-
-  }
-
-  #footersection {
-    background-image: url("images/footerbackground.png");
-    background-repeat: no-repeat no-repeat;
-    background-size: 100% 100%;
-
-  }
-
-  .navsection {
-    max-width: 1300px;
-    padding: 0 30px;
-    margin: auto;
-  }
-
-
-  @media only screen and (max-width: 767px) {
-    .section1top {
-      max-width: 1300px;
-      padding: 0 30px;
-      margin: auto;
-
-    }
-
-    .navsection {
-      max-width: 1300px;
-      padding: 0;
-      margin: auto;
-    }
-  }
-
-
-
-
-
-
-  /***************************TRACK MY ORDER CSS************************************/
-  .trackmyordermiddle {
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-block: 50px;
-    padding-inline: 40px;
-
-  }
-
-  .trackmyordertext {
-    font-family: Poppins-Light;
-    font-size: 13px;
-    color: black;
-  }
-
-  .toptrackmyordertext {
-    margin-block: 2%;
-  }
-
-  .toptrackmyorderlink {
-    color: black;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 767px) {
-
-    /***********************TRACK MY ORDER CSS******************/
-    .trackmyordermiddle {
-
-      padding-block: 100px;
-    }
-
-    /******************CATALOG CSS****************************/
-  }
-
-  /******************CATALOG CSS****************************/
-
-
-  .middlesection {
-    padding-block: 50px;
-  }
-
-  @media screen and (max-width: 767px) {
-    #bestsellersectionpadding {
-      padding-block: 100px;
-    }
-  }
-
-
-
-
-
-
-
-  /***********************CONTACT US CSS*********************/
-  .middleform {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-
-  input[type=text1] {
-    width: 34%;
-    padding: 12px 16px;
-    margin: 10px 10px;
-    display: inline-block;
-    box-sizing: border-box;
-    border-radius: 0;
-  }
-
-  #textarea {
-    width: 69.6%;
-    margin-block: 10px;
-  }
-
-  .middelcontactsection {
-    padding-block: 50px;
-  }
-
-  @media screen and (max-width: 767px) {
-
-    input[type=text1],
-    #textarea {
-      min-width: 70%;
-    }
-
-    .middelcontactsection {
-      padding-block: 100px;
-    }
-  }
-
-  textarea[type=textbox] {
-    padding-left: 16px;
-  }
-
-  .submit {
-
-    color: rgb(255, 255, 255);
-    font-family: Poppins-Light;
-    background-color: rgb(0, 0, 0);
-    padding: 0.7% 4%;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-  }
-
-
-
-  /********************************ABOUT OUTLETS CSS***************************/
-  .textaboutoutlets {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    font-family: Poppins-Light;
-    font-size: 14px;
-    padding-inline: 10%;
-    padding-block: 35px;
-  }
-
-  @media only screen and (max-width: 767px) {
-    .textaboutoutlets {
-      padding-block: 100px;
-    }
-  }
-
-  .textaboutoutlets p {
-    text-align: center;
-    padding-block: 15px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /***************************SHOP NOW*************************/
-  .shownowrowtop {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .shopnowcol1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .shopnowcol1image {
-    padding-block-end: 10px;
-  }
-
-  .automamatictoothpast {
-    font-family: Poppins-SemiBold;
-  }
-
-  /*********************Quantity Button***************/
-  /* -- quantity box -- */
-  /***************************************************/
-  .shopnowrow3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    /* gap: 4%; */
-    justify-content: space-between;
-  }
-
-  .shownowcol3 {
-    width: 45%;
-  }
-
-  .shownowcol2 {
-    width: 45%;
-  }
-
-  .shopnowcol1 {
-    width: 5%;
-  }
-
-  .photosreview {
-    font-family: Poppins-Medium;
-    font-size: 13px;
-  }
-
-  .shoppagypackground {
-    background: url("images/shoppaybackground.png");
-    color: rgb(255, 255, 255);
-    font-family: Poppins-Light;
-  }
-
-  @media only screen and (max-width: 767px) {
-    .shownowcol3 {
-      width: 100%;
-    }
-
-    .shownowcol2 {
-      width: 100%;
-    }
-
-    .shopnowcol1 {
-      width: 100%;
-    }
-
-    .shopnowrow3col {
-      width: 100%;
-    }
-  }
-
-  #thirdsectionshownow {
-    margin: 4% auto;
-  }
-
-  .shopnowrow2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .shopnowrow2col {
-    width: 50%;
-  }
-
-  .shopnowrow2colmid {
-    width: 100%;
-  }
-
-
-
-  /****************Carousel HTML & CSS***********************/
-  /* Slideshow container */
-  .slideshow-container {
-    width: inherit;
-    position: relative;
-    margin: auto;
-  }
-
-  .carousel-item {
-    display: none
-  }
-
-  .dot:hover {
-    background-color: #ff0000;
-    transition: 0.1s;
-  }
-
-  .dotslide {
-    width: 100%;
-    text-align: center;
-    padding-block: 20px;
-  }
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-
-
-  .dot {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-  .dot:hover {
-    background-color: #ff0000;
-    transition: background-color 0.3s ease;
-    height: 10px;
-    width:10px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONISVE HOME PAGE</title>
+    <!-- <link rel="stylesheet" href="responsivegridcardscss.css"> -->
+    <link rel="stylesheet" href="bestsellerresponisivecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="pagewidth">
+
+
+        <section id="backgroundtopsection">
+            <section class="navsection">
+                <nav id="nav-id">
+                    <div class="container">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div class="logo">
+                        <a href="responsivehomepage.html" class="logolink">
+                            <img src="images/logo.png" alt="Logo" class="logoimage">
+                        </a>
+
+                    </div>
+
+                    <ul class="nav-items" id="nav-items">
+                        <li><a href="responsivehomepage.html">HOME</a></li>
+                        <li><a href="catalogresponsive.html">CATALOG</a></li>
+                        <li><a href="contactusresponsivehtml.html">CONTACT</a></li>
+                        <li><a href="catalogresponsive.html">SHOP NOW</a></li>
+                        <li><a href="trackmyorder.html">TRACK MY ORDER</a></li>
+
+
+                    </ul>
+                    <div class="icons">
+                        <img src="images/user.png" alt="Icon 1" class="iconsimages">
+                        <img src="images/cart.png" alt="Icon 2" class="iconsimages middleicon">
+                        <img src="images/magnify.png" alt="Icon 3" class="iconsimages">
+                    </div>
+                </nav>
+            </section>
+
+            <div class="section1top">
+
+
+                <!--****************************************************-->
+                <div class="slideshow-container">
+                    <div class="carousel-item fade">
+                        <div class="rowtopsection">
+                            <div class="column1">
+                                <p class="shopoutlets  textspacing">Shop Outlet</p>
+                                <h1 class="quality">Really good quality and</h1>
+                                <h1 class="cheapproducts">CHEAP PRODUCTS</h1>
+                                <div class="textspacing">
+                                    <p class="cheapandeasy">Our Store was created for everyone to find what they</p>
+                                    <p class="cheapandeasy"> are looking for in and easy way and a cheap way.</p>
+                                </div>
+                                <button class="collection">EXPLORE THE COLLECTION</button>
+                            </div>
+                            <div class="column2">
+
+                                <img src="images/imagestacked-remove.png" alt="" class="child">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item fade">
+                        <div class="rowtopsection">
+                            <div class="column1">
+                                <p class="shopoutlets  textspacing">DELL LAPTOPS</p>
+                                <h1 class="quality">Really good quality and</h1>
+                                <h1 class="cheapproducts">CHEAP Laptops 1</h1>
+                                <div class="textspacing">
+                                    <p class="cheapandeasy">Our Store was created for everyone to find what they</p>
+                                    <p class="cheapandeasy"> are looking for in and easy way and a cheap way.</p>
+                                </div>
+                               
+                            </div>
+                            <div class="column2">
+
+                                <img  src="images/mobile 3.jpg" alt="" class="child">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item fade">
+                        <div class="rowtopsection">
+                            <div class="column1">
+                                <p class="shopoutlets  textspacing">HP Laptops</p>
+                                <h1 class="quality">Really good laptopss and</h1>
+                                <h1 class="cheapproducts">CHEAP Laptop2  </h1>
+                                <div class="textspacing">
+                                    <p class="cheapandeasy">Our Store was created for everyone to find what they</p>
+                                    <p class="cheapandeasy"> are looking for in and easy way and a cheap way.</p>
+                                </div>
+                               
+                            </div>
+                            <div class="column2">
+
+                                <img src="images/mobile2.jpg" alt="" class="child">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item fade">
+                        <div class="rowtopsection">
+                            <div class="column1">
+                                <p class="shopoutlets  textspacing">ACER LAPTOPS</p>
+                                <h1 class="quality">Really good quality and</h1>
+                                <h1 class="cheapproducts">CHEAP Laptop3  </h1>
+                                <div class="textspacing">
+                                    <p class="cheapandeasy">Our Store was created for everyone to find what they</p>
+                                    <p class="cheapandeasy"> are looking for in and easy way and a cheap way.</p>
+                                </div>
+                               
+                            </div>
+                            <div class="column2">
+
+                                <img  src="images/laptop3.jpg" alt="" class="child">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item fade">
+                        <div class="rowtopsection">
+                            <div class="column1">
+                                <p class="shopoutlets  textspacing">APPLE LAPTOPS</p>
+                                <h1 class="quality">Really good quality and</h1>
+                                <h1 class="cheapproducts">CHEAP Laptop2  </h1>
+                                <div class="textspacing">
+                                    <p class="cheapandeasy">Our Store was created for everyone to find what they</p>
+                                    <p class="cheapandeasy"> are looking for in and easy way and a cheap way.</p>
+                                </div>
+                               
+                            </div>
+                            <div class="column2">
+
+                                <img src="images/laptop4.jpg" alt="" class="child">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dotslide">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+            <!--****************************************************-->
+
+        </section>
+        <section id="featuresection">
+            <div class="section1top">
+                <h1 class="heading">FEATURED PRODUCTS</h1>
+
+                <div class="rowfeature">
+                    <div class="col-4">
+                        <img src="images/lamp.png" alt="" class="featureimage">
+                        <div class="text-button">
+                            <h4 class="card-text">AROMA DIFFUSER AIR 2.0</h4>
+                            <button class="buynow">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/Jacket.png" alt="" class="featureimage">
+                        <div class="text-button">
+                            <h4 class="card-text">CAMO PRINT JACKET
+                            </h4>
+                            <button class="buynow">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/hoddie.png" alt="" class="featureimage">
+                        <div class="text-button">
+                            <h4 class="card-text">WOMEN ZIP UP
+                            </h4>
+                            <h4 class="card-text">HOODIE STREET WEAR
+                            </h4>
+                            <button class="buynow">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bestsellersection">
+            <div class="section1top">
+                <h1 class="heading">Best Sellers</h1>
+
+                <div class="bestsellerrow">
+                    <!-- Making 4 div which will be felxible -->
+                    <div class="col-3">
+
+                        <img src="images/toothpaste.png" alt="" class="imagesbestseller">
+
+
+                        <div class="details">
+                            <p class="seller-text">Automatic Toothpase Dispenser</p>
+
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$10.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+
+                        <img src="images/helmet.png" alt="Jacket" class="imagesbestseller">
+
+
+                        <div class="details">
+                            <p class="seller-text">Bicycle Helmet LED Light Rechargeable</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$42.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/pump.png" alt="" class="imagesbestseller">
+
+
+                        <div class="details">
+                            <p class="seller-text">CO2 Pump For Bicycle</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$15.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="images/faucet.png" alt="" class="imagesbestseller">
+
+
+                        <div class="details">
+                            <p class="seller-text">Black Square Paint Faucet</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$49.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/Globe.png" alt="" class="imagesbestseller">
+
+
+                        <div class="details">
+                            <p class="seller-text">Crystal Solar System Planet Globe 3D</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$35.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="images/Electric Faucet.png" alt="" class="imagesbestseller">
+
+                        <div class="details">
+                            <p class="seller-text">Electric Faucet Water Heater</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$38.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="images/Chopper.png" alt="" class="imagesbestseller">
+
+                        <div class="details">
+                            <p class="seller-text">Electric Kitchen Chopper</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$29.99 USD</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="images/modernfaucet.png" alt="" class="imagesbestseller">
+
+                        <div class="details">
+                            <p class="seller-text">modern luxury faucet</p>
+                            <img src="images/stars.png" alt="" class="stars">
+                            <p class="sales">6,673 Sales</p>
+                            <p class="price">$69.99 USD</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="VIEWMORE">VIEW MORE</button>
+            </div>
+        </section>
+        <!---->
+
+
+        <section id="aboutoutletssection">
+            <div class="section1top">
+                <h1 class="heading">About Outlets</h1>
+                <div class="aboutoutletsrow">
+                    <div class="rightoutlets">
+                        <img src="images/outletsimageleftcolum.png" alt="" class="outletsimage">
+                    </div>
+                    <div class="col-text outlettextcontainer">
+
+                        <p class="aboutoutletswelcome">Welcome to our shop!</p>
+                        <p class="aboutoutletstext">
+                            Our mission is for you to buy really good quality and cheap <br>
+                            products
+                            that you won't be able to find anywhere else <br>
+                            Our store was created for everyone to
+                            find what they are looking <br> for in and easy
+                            way and a cheap way.</p>
+                        <p class="aboutoutletstext ">Because what is better than cheap products? Great quality
+                            <br>cheap
+                            products
+                        </p>
+
+                        <button class="READMORE">READ MORE</button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footersection">
+            <div class="section1top">
+
+                <div class="footer-grid">
+                    <div class="footercolumn footercolum1">
+                        <a href="responsivehomepage.html" class="logolink">
+                            <img src="images/footerlogo.png" alt="" class="footerlogo">
+
+                        </a>
+                    </div>
+                    <div class="footercolumn footercolum2">
+                        <p class="main-ul">FEELING SOCIAL?</p>
+                        <img src="images/footericons.png" alt="" class="feelingsocialimages">
+                        <p class="main-ul">NEWS LETTER</p>
+                        <form action="">
+                            <input type="text" placeholder="Email-address" size="40">
+                            <button class="subscribe">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                    <div class="footercolumn footercolum3">
+                        <p class="main-ul">
+                            HELP
+                        </p>
+                        <ul class="ulfooter">
+                            <li class="lifooter">
+                                <a class="anchor-footer" href="">Shippping</a>
+                            </li>
+                            <li class="lifooter">
+                                <a class="anchor-footer" href="">FAQ</a>
+                            </li>
+                            <li class="lifooter">
+                                <a class="anchor-footer" href="">Returns</a>
+                            </li>
+                            <li class="lifooter">
+                                <a class="anchor-footer" href="">Privacy</a>
+                            </li>
+                            <li class="lifooter">
+                                <a class="anchor-footer" href="">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footercolumn footercolum4">
+                        <p class="main-ul">COMPANY</p>
+                        <ul class="ulfooter">
+                            <li class="lifooter"><a class="anchor-footer" href="">About Us</a> </li>
+                            <li class="lifooter"><a class="anchor-footer" href="">Contact Us</a> </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="bottom ">
+
+                    <p class="copyright">Copyright 2022 outlest.com. All rights reserved.</p>
+                    <img src="images/Visa Cards.png" alt="" class="copyimage">
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jsslidedownhamburgermeneu.js"></script>
+</body>
+
+</html>
