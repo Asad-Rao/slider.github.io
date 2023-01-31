@@ -1047,7 +1047,7 @@ width: 16%;
 }
 
 .carousel_actions
-{
+{height: 120px;
 width: 100%;
 position: absolute;
 top: 14rem;
@@ -1063,31 +1063,51 @@ justify-content: space-between;
   cursor: pointer;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 30px;
-
+  font-size: 40px;
   user-select: none;
 }
-.next
-{
-  border-radius: 200px 0  0 200px;
-
-  padding-inline-end:10px;  
+.next:hover
+{font-size: 60px;
+  border-radius: 250px 0  0 250px;
+  transition: 0.1s;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-block:20px;
+  display: flex;
+  align-items: center;
+  height: 125px;
+  background-color: rgba(187, 187, 187, 0.6);
 }
-.prev
-{
-  border-radius: 0 200px  200px 0;
-  padding-block: 50px;
-  padding-inline-start:10px;  
+.prev:hover
+{font-size:60px;
+  border-radius: 0 250px  250px 0;
+  transition: 0.1s;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-block:20px;
+  display: flex;
+  align-items: center;
+  height: 125px;
+  background-color: rgba(187, 187, 187, 0.6);
 }
+  @media screen and (max-width: 767px){
 
-
-/* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(187, 187, 187, 0.6);
-    padding-inline:30px; 
-    font-size: 40px;
-    padding-block: 50px;
-  } 
+    .next:hover
+    {font-size: 30px;
+      border-radius: 250px 0  0 250px;
+      transition: 0.3s;
+      padding-left: 15px;
+      padding-right: 10px;
+      
+    }
+    .prev:hover
+    {font-size:30px;
+      border-radius: 0 250px  250px 0;
+      transition: 0.3s;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 .dot {
   cursor: pointer;
   height: 8px;
@@ -1109,6 +1129,4 @@ justify-content: space-between;
 flex-direction: row;
 justify-content: space-between;
 flex-wrap: wrap;
-/* margin: 2% auto; */
-
 }
