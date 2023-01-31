@@ -964,6 +964,7 @@
   {
       display: flex;   
       justify-content: space-between;
+      flex-wrap: wrap;
   }
   .shopnowcol1
   {
@@ -978,35 +979,71 @@
   {
     font-family: Poppins-SemiBold;
   }
+  /*********************Quantity Button***************/
+/* -- quantity box -- */
+
+#myform {
+  text-align: center;
+  padding: 5px;
+  border: 1px dotted #ccc;
+  margin: 2%;
+}
+.qty {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+ 
+ 
+  /***************************************************/
   .shopnowrow3
   {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   width: 100%;
-  gap: 4%;
+  /* gap: 4%; */
   justify-content: space-between;
   }
-  .shopnowrow3col
+  .shownowcol3
   {
-  width: 16%;
+  width: 45%;
+  }
+  .shownowcol2
+  {
+    width: 35%;
+  }
+  .shopnowcol1{
+    width: 10%;
   }
   .photosreview
   {
     font-family:Poppins-Medium;
     font-size: 13px;
   }
+  .shoppagypackground
+  {
+    background: url("images/shoppaybackground.png");
+    color: rgb(255, 255, 255);
+    font-family: Poppins-Light;
+  }
   @media only screen and (max-width: 767px) {
+    .shownowcol3
+    {
+    width: 100%;
+    }
+    .shownowcol2
+    {
+      width: 100%;
+    }
+    .shopnowcol1{
+      width: 100%;
+    }
     .shopnowrow3col
     {
       width: 100%;
-    }.shopnowrow3
-    {
-      row-gap: 2rem;
-    }
-    .photosreview
-    {
-      text-align: center;
     }
   }
   #thirdsectionshownow
@@ -1044,10 +1081,11 @@
 
   .dot:hover {
     background-color: #ff0000;
+    transition: 0.1s;
   }
 
   .carousel_actions
-  {height: 120px;
+  {
   width: 100%;  
   position: absolute;
   top: 14rem;
@@ -1103,10 +1141,7 @@
     background-color: rgba(187, 187, 187, 0.6);
   }
     @media screen and (max-width: 767px){
-  .carousel_actions
-  {     height: 90px;
 
-  }
       .next:hover
       {font-size: 30px;
         border-radius: 200px 0  0 200px;
