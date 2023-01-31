@@ -931,7 +931,7 @@ margin: auto;
   flex-direction: column;
   font-family: Poppins-Light;
   font-size: 14px;
-padding-inline: 150px;
+padding-inline: 10%;
 padding-block: 35px;
 }
 @media only screen and (max-width: 767px) {
@@ -1035,58 +1035,67 @@ width: 16%;
 /****************Carousel HTML & CSS***********************/
 /* Slideshow container */
 .slideshow-container {
-  max-width:1300px;
-  /* To out the buttons inside the carousel on top of slides */
+ width: 100%;
   position: relative;
   margin: auto;
 }
 
 .carousel-item {display: none}
 
+.dot:hover {
+  background-color: #ff0000;
+}
 
-.active, .dot:hover {
-  background-color: #717171;
+.carousel_actions
+{
+width: 100%;
+position: absolute;
+top: 18rem;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
 }
 
 
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  position: fixed;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
+  padding-block: 16px;
+  padding-inline: 10px;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 20px 20px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+  /* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  } */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 8px;
+  width: 8px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.dot:hover {
+  background-color: #ff0000;
 }
 
+.carouseladjustment {
+  max-width: 1700px;
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+}
