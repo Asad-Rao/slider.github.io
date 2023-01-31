@@ -931,7 +931,7 @@ margin: auto;
   flex-direction: column;
   font-family: Poppins-Light;
   font-size: 14px;
-margin-inline: 10%;
+padding-inline: 10%;
 padding-block: 35px;
 }
 @media only screen and (max-width: 767px) {
