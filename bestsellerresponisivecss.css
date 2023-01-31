@@ -1035,7 +1035,7 @@
   /****************Carousel HTML & CSS***********************/
   /* Slideshow container */
   .slideshow-container {
-  width: 100%;
+  width: inherit;
     position: relative;
     margin: auto;
   }
@@ -1048,8 +1048,7 @@
 
   .carousel_actions
   {height: 120px;
-  width: 100%;
-  margin: auto;
+  width: 100%;  
   position: absolute;
   top: 14rem;
   display: flex;
@@ -1089,7 +1088,7 @@
     display: flex;
     align-items: center;
     height: 125px;
-    background-color: rgba(187, 187, 187, 0.6);
+    background-color: rgba(187, 187, 187, 0.1);
   }
   .prev:hover
   {font-size:60px;
