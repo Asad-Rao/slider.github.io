@@ -1049,6 +1049,7 @@ width: 16%;
 .carousel_actions
 {height: 120px;
 width: 100%;
+margin: auto;
 position: absolute;
 top: 14rem;
 display: flex;
@@ -1062,6 +1063,7 @@ justify-content: space-between;
 .prev, .next {
   cursor: pointer;
   color: rgb(0, 0, 0);
+
   font-weight: bold;
   font-size: 40px;
   user-select: none;
