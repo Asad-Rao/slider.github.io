@@ -1065,7 +1065,18 @@ justify-content: space-between;
   font-weight: bold;
   font-size: 40px;
   user-select: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  
+  
 }
+/* .prev{
+  margin-left: 0px;
+}
+.next
+{
+  margin-right: 0px;
+} */
 .next:hover
 {font-size: 60px;
   border-radius: 250px 0  0 250px;
@@ -1092,23 +1103,23 @@ justify-content: space-between;
 }
   @media screen and (max-width: 767px){
 .carousel_actions
-{     height: 66px;
+{     height: 90px;
 
 }
     .next:hover
     {font-size: 30px;
       border-radius: 200px 0  0 200px;
       transition: 0.3s;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 7px;
+      padding-right: 7px;
       height: 90px;
     }
     .prev:hover
     {font-size:30px;
       border-radius: 0 200px  200px 0;
       transition: 0.3s;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 7px;
+      padding-right: 7px;
       height: 90px;
     }
   }
@@ -1133,6 +1144,4 @@ justify-content: space-between;
 flex-direction: row;
 justify-content: space-between;
 flex-wrap: wrap;
-/* margin: 2% auto; */
-
 }
