@@ -1050,7 +1050,7 @@ width: 16%;
 {
 width: 100%;
 position: absolute;
-top: 10rem;
+top: 18rem;
 
 display: flex;
 align-items: center;
@@ -1097,4 +1097,6 @@ justify-content: space-between;
 flex-direction: row;
 justify-content: space-between;
 flex-wrap: wrap;
+/* margin: 2% auto; */
+
 }
