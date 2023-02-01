@@ -1,0 +1,492 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+
+#featuresection {
+    margin-block: 4rem;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 25px;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Poppins-SemiBold";
+    color: black;
+    margin-block: 1rem;
+}
+
+.Featureproductsgrid {
+    display: grid;
+    grid-template-columns: 30.66% 30.66% 30.66%;
+    column-gap: 4%;
+    grid-template-rows: auto;
+}
+/* .item1
+{
+    width: 33.33%;
+} */
+.featureproductimages {
+    width: 100%;
+    height: auto;
+}
+
+.item1 {
+    position: relative;
+}
+
+.pagewidth {
+    margin: 0 4%;
+}
+
+.text-button {
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 9%;
+    white-space: nowrap;
+
+
+
+}
+
+.card-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins-SemiBold";
+    font-size: 20px;
+}
+
+
+.buynow {
+    font-size: 15px;
+    color: white;
+    font-family: "Poppins-SemiBold";
+    background-color: black;
+    padding: 4% 15%;
+    margin-block-start: 5%;
+
+}
+
+.max-width {
+    max-width: 1343px;
+    margin: 0 auto;
+    min-width: 474px;
+
+
+    /* 
+       
+    /* background-position:100px 100px ;
+    background-repeat: no-repeat; */
+
+
+}
+
+.topbackground {
+    background-image: url("images/darktopsection.png"), url("images/behinddarks.png");
+    background-size: 1343px 630px;
+    background-repeat: no-repeat;
+
+}
+
+.outletsbackground {
+    background-image: url("images/AboutOutletsBackground.png");
+    background-size: 1343px 565px;
+    background-repeat: no-repeat;
+    padding-block: 2rem;
+}
+
+
+
+/***************************************************************************/
+
+#bestsellersection {
+    margin-block: 4rem;
+}
+
+.bestsellerproductgrid {
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    grid-template-rows: 378px 378px;
+    column-gap: 20px;
+    row-gap: 30px;
+
+
+}
+
+.seller-text {
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 3px;
+}
+
+.sales {
+    font-size: 13px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.price {
+    font-size: 17px;
+    font-family: "Poppins-SemiBold";
+
+}
+
+.viewmorebutton {
+    width: 50%;
+    margin-inline: auto;
+    text-align: center;
+
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("Fonts/Poppins-Light.ttf");
+}
+
+.VIEWMORE {
+    color: rgb(0, 0, 0);
+    font-family: "Poppins-Light";
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 2% 5%;
+}
+
+/****************************************************************/
+
+#outletssection {
+    margin-block: 4rem;
+}
+
+.aboutletsgrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px;
+}
+
+/* .outletsimage
+{
+    background-image: url("images/outletsbackground.png");
+    background-size: 300px 100px;
+} */
+.outletsimages {
+    object-fit: display;
+    height: 100%;
+    width: 100%;
+}
+
+.colum2 {
+    padding: 0 5%;
+    text-align: left;
+    background: white;
+}
+
+.aboutoutletswelcome {
+    font-family: "Poppins-SemiBold";
+    color: black;
+    font-size: 15px;
+    line-height: 5px;
+}
+
+.aboutoutletstext {
+    font-size: 15px;
+    font-family: "Poppins-Light";
+    word-spacing: 10px;
+    line-height: 25px;
+}
+
+.aboutoutletswelcome {
+    line-height: 50px;
+}
+
+.readmorediv {
+    width: auto;
+}
+
+/*******************************************************************/
+/*****************************NAV BAR CSS****************/
+.nav
+{
+    background-color:rgb(242 242 242);
+    /* Specifying 10vh is equivalent to
+    occupying 10% of entire visible screen height. */
+    min-height: 40vh;
+    height: 0rem;
+    overflow: hidden;
+}
+
+/* .nav-menu is selected */
+.nav .nav-menu{
+    /*property defines how the browser
+     distributes space between and around content
+      items along the main-axis of a flex container, 
+      and the inline axis of a grid container.*/
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.nav .nav-brand a{
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.nav .nav-items
+{
+
+/* Dotted type of list is removed of li of ul */
+    list-style-type: none;
+    /* moving the li of ul in same line */
+    display: flex;
+    /*   */
+    margin: 0;
+}
+.nav .nav-items .nav-links
+{
+    padding: 1.6rem 1rem;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+}
+.nav .nav-items .nav-links a
+{
+    text-decoration: none;
+}
+.flex-row
+{
+    display: flex;
+    /* flex items are displayed in a row
+    direction text is laid out in a line */
+    /* All the items in a div of class flex and flex-direction
+    are displayed in same line  */
+    flex-direction: row;
+}
+.social a
+{
+    text-decoration: none;
+}
+.nav .social
+{
+    padding: 1.4rem;
+}
+
+
+
+
+/***************************************************************/
+.topgrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.columnonetext {
+    font-family: "Poppins-Light";
+    float: left;
+    padding-block: 6rem;
+}
+
+.shopoutlets {
+    font-size: 15px;
+    /* mag */
+    font-family: "Poppins-Light";
+}
+
+.quality {
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url("Fonts/Poppins-ExtraBold.ttf");
+}
+
+.cheapproducts {
+    font-size: 60px;
+    font-family: "Poppins-ExtraBold";
+    line-height: 0.98;
+}
+
+.cheapandeasy {
+    font-size: 15px;
+
+}
+
+.textspacing {
+    margin-block: 1rem;
+
+}
+
+.collection {
+    font-size: 15px;
+    font-family: "Poppins-Light";
+    padding: 2% 5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+
+
+    border: 1px solid rgb(255, 0, 0);
+
+}
+
+/* .topbackground
+{
+    background-image:url("images/darktopsection.png") ;
+    background-size: 1300px 399px;
+    background-repeat:no-repeat	
+} */
+
+
+.footerbackground {
+    background-image: url("images/footerbackground.png");
+    background-size: 1343px auto;
+}
+
+#footersection {
+
+    color: white;
+    height: 236px;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footerlogcolum {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.row1 {
+    line-height: 3;
+}
+
+input {
+    size: "25";
+    padding-block: 9px;
+}
+
+.subscribe {
+    font-size: 15px;
+    font-family: "Poppins-SemiBold";
+    padding-block: 5px;
+
+
+
+}
+
+.anchor-footer {
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+}
+
+.footermainul {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.ulfooter {
+    list-style: none;
+    line-height: 1.75;
+}
+
+.lifooter {
+    font-size: 15px;
+    font-family: "Poppins-Light";
+
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url("Fonts/Poppins-Light.ttf");
+}
+
+::placeholder {
+    font-size: 13px;
+    font-family: "Poppins-Light";
+    margin-inline-start: 20px;
+}
+
+.copyright {
+    font-size: 15px;
+    font-family: "Poppins-Light";
+    letter-spacing: 1px;
+}
+
+/*********************************************************/
+.parent {
+    position: relative;
+    margin: auto;
+    height: 500px;
+    width: 617.781px;
+
+
+}
+
+.child {
+    position: absolute;
+    translate: 16.5rem;
+
+}
+
+
+.scalechild {
+    scale: 70% 65%;
+}
+
+.jug {
+    scale: 80%;
+
+}
+
+.cap {
+    inset-block-start: 14.2rem;
+    inset-inline-start: 1rem;
+}
+
+.watch {
+    inset-block-start: 17rem;
+    inset-inline-end: 31rem;
+}
+
+.helmet {
+    inset-block-start: 10rem;
+    inset-inline-end: 30.1rem;
+}

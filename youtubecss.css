@@ -1,0 +1,129 @@
+@import url("fontcssyoutube.css");
+
+
+
+*
+{   
+box-sizing: border-box;    
+}
+
+html,body
+{
+    margin: 0;
+    padding: 0;
+    /*The CSS box-sizing property allows
+    us to include the padding and border in 
+    an element's total width and height.
+    Padding and border are included in the 
+    width and height*/
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/*navbar*/
+.nav
+{
+    background-color: rgb(230, 230, 230);
+    padding: 0 2rem;
+
+    /* Specifying 10vh is equivalent to
+    occupying 10% of entire visible screen height. */
+    min-height: 40vh;
+    height: 0rem;
+    overflow: hidden;
+}
+
+/* .nav-menu is selected */
+.nav .nav-menu{
+    /*property defines how the browser
+     distributes space between and around content
+      items along the main-axis of a flex container, 
+      and the inline axis of a grid container.*/
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.nav .nav-brand a{
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.nav .nav-items
+{
+
+/* Dotted type of list is removed of li of ul */
+    list-style-type: none;
+    /* moving the li of ul in same line */
+    display: flex;
+    /*   */
+    margin: 0;
+}
+.nav .nav-items .nav-links
+{
+    padding: 1.6rem 1rem;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+}
+.nav .nav-items .nav-links a
+{
+    text-decoration: none;
+}
+.flex-row
+{
+    display: flex;
+    /* flex items are displayed in a row
+    direction text is laid out in a line */
+    /* All the items in a div of class flex and flex-direction
+    are displayed in same line  */
+    flex-direction: row;
+}
+.social a
+{
+    text-decoration: none;
+}
+.nav .social
+{
+    padding: 1.4rem;
+}
+
+
+/*********************Main Content*****************/
+.sitebackground{
+    padding: 0 2rem;
+}
+main .site-title
+{
+    background: url("images/main title.png");
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: left;
+    font-family:Poppins-Light;
+
+}
+main .site-title h4,main .site-title p
+{
+font-size: 15px;
+}
+main .site-title h5
+{
+font-size: 30px;
+}
+main .site-title h3
+{
+    font-family:Poppins-ExtraBold ;
+    font-size: 60px;
+}
+
+/*************************************************/
+
+/* /VIEW PORT LESS THAN 750PX/ */
+/* @media only screen and (max-width: 750px)
+{
+    .nav .nav-menu,.nav .nav-items  {
+        flex-direction: column;
+}
+} */
+
+
+/***************************Card CSS******************/

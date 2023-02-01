@@ -1,0 +1,109 @@
+@import url("fontcssyoutube.css");
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.rowfeature {
+    display: flex;
+    flex-direction: row;
+    /* width of whole row is 1300px */
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    justify-content: center;
+flex-wrap: wrap;  
+}
+  
+  .col-4 {
+    width: 340px;
+    border: 1px solid black;
+    margin-inline: 40px;
+    margin-block: 20px;
+    position: relative;
+
+  }
+  
+.text-button {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 10px;
+    /* left: 83.4765;
+    right: 83.4765px; */
+}
+  .featureimage {
+    width: 100%;
+  }
+  .card-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: Poppins-SemiBold;
+    font-size: 20px;
+}
+
+
+.buynow {
+    font-size: 15px;
+    color: white;
+    font-family:Poppins-SemiBold;
+    background-color: black;
+    padding: 3% 7%;
+    margin-block-start: 2%;
+
+}
+
+  @media only screen and (min-width:200px) and (max-width:980px) {
+    .rowfeature {
+      flex-wrap: wrap;
+      width: 250px;
+      /* flex-direction: column; */
+      justify-content: center;
+      height: auto;
+    }
+  
+    .col-4 {
+      width: 150px;
+      border: 1px solid black;
+      margin-block: 20px;
+    }
+    .card-text {
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-family: Poppins-SemiBold;
+        font-size: 2vh;
+    }
+    .buynow {
+        font-size: 2vh;
+        color: white;
+        font-family:Poppins-SemiBold;
+        background-color: black;
+        padding: 3% 7%;
+        margin-block-start: 2%;
+    
+    }
+    .text-button {
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 3px;
+        /* left: 83.4765;
+        right: 83.4765px; */
+    }
+  
+  }

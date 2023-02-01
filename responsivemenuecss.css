@@ -1,0 +1,119 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    /* Manages extra padding and width of html elements */
+    box-sizing: border-box;
+}.nav
+{
+    background-color:rgb(242 242 242);
+    /* Specifying 10vh is equivalent to
+    occupying 10% of entire visible screen height. */
+ 
+   height: auto;
+    overflow: auto;
+    display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+}
+.nav-logo
+{
+
+width: 20%;
+}
+.menu-items
+{
+width: 60%;
+}
+
+/*************************ul*****************************/
+.nav-items
+{
+
+/* Dotted type of list is removed of li of ul */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.nav .nav-items .nav-links
+{
+    padding-block: 1.6rem;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    /* display: inline-block; */
+}
+.nav .nav-items .nav-links a
+{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.social a
+{
+    text-decoration: none;
+}
+.nav .social
+{
+    padding-block: 1.4rem;
+}
+
+
+/* NAV-BAR TOGGLER */
+.nav-bar-toggler
+{
+  /* Making nav-toggler invisible */
+  display: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav-bar-toggler .bar{
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+
+}
+.change .bar1 {
+  transform: translate(0, 25px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -25px) rotate(45deg);
+}
+@media screen and (max-width:767px) {
+  nav
+  {
+    display: flex;
+  
+  }
+  .nav-logo
+  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+.social
+{
+  display: none;
+}
+
+
+.nav  .nav-items
+{
+display: none;
+
+}
+.nav-bar-toggler
+{
+  display: flex;
+}
+
+}

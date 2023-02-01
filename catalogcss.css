@@ -1,0 +1,276 @@
+@import url("fontcssyoutube.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: auto;
+    margin: 0 auto;
+
+}
+
+.pagewidth {
+    max-width: 1700px;
+    margin: auto;
+}
+
+#headersection {
+    max-width: 1300px;
+    margin: 0 10%;
+}
+
+nav {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.hamurgermeune {
+    display: none;
+
+}
+
+.change1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change2 {
+    opacity: 0;
+}
+
+.change3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.navsection
+{
+max-width:1300px;
+padding: 0 30px;
+margin: auto;
+}
+
+
+@media screen and (max-width:767px) {
+ 
+    #nav-id
+    {
+      padding-block:15px;
+      position:fixed;
+      top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }}
+
+
+.nav-items {
+    display: flex;
+
+}
+
+.nav-items li {
+
+    list-style: none;
+
+}
+
+.headeritems {
+    margin-inline: 10px;
+}
+
+.nav-items li a {
+    color: black;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.headingallproducts {
+    text-align: center;
+    font-family: Poppins-SemiBold;
+    font-size: 19px;
+    margin-block: 10%;
+}
+
+#allproductionsection {
+    max-width: 1300px;
+    margin: 0 10%;
+}
+
+.rowproducts {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards {
+    width: 22%;
+    margin-bottom: 3%;
+}
+
+.allproductimages {
+    width: 100%;
+}
+
+#footersection {
+    max-width: 1700px;
+    margin: auto;
+    background-color: black;
+}
+
+
+.footercontainer {
+    max-width: 1300px;
+    margin: 0 10%;
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rowfooter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.salenumber {
+    display: inline-block;
+    font-size: 11px;
+}
+
+.cardtext {
+
+    font-size: 12px;
+
+}
+
+.dollar {
+    font-family: Poppins-SemiBold;
+    font-size: 13px;
+}
+
+.loadmore {
+    display: block;
+    margin: auto;
+    font-family: Poppins-Light;
+    font-size: 12px;
+    padding: 1% 4%;
+    color: black;
+    background-color: white;
+}
+
+.footerbottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyrigthtext {
+    font-size: 13px;
+}
+
+.mainfooterul {
+    font-family: 'Poppins', sans-serif;
+}
+
+.lifooter {
+    font-size: 12px;
+    list-style: none;
+
+}
+
+.lifooter a {
+    color: white;
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+
+@media only screen and (max-width: 768px) {
+    .hamurgermeune {
+        display: inline-block;
+        cursor: pointer;
+    }
+.iconsimages
+{
+    max-width: 2%;
+}
+    .icons
+    {
+        display: flex;
+        justify-content:space-around
+    }
+    .middleicon {
+        margin-inline: 2px;
+    }
+
+    #allproductionsection {
+        margin: auto 7%;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .carddetails {
+        text-align: center;
+    }
+
+    .footerlogobottom {
+        width: 100%;
+    }
+
+    .footersocial {
+        width: 100%;
+    }
+
+    .footerhelp {
+        width: 100%;
+    }
+
+    .footercompany {
+        width: 100%;
+    }
+
+    .footercontainer {
+        text-align: center;
+    }
+
+    .copyrigthtext {
+        width: 100%;
+    }
+
+    .copyrightimage {
+        width: 100%;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+
+  text-decoration: none;
+
+  display: block;
+}
+
+.topnav a.icon {
+
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Top Navigation Menu -->
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <div class="topnav">
+    <div id="myLinks">
+        <ul class="nav-items menu">
+            <li class="li-items"><a href="">HOME</a></li>
+
+            <li class="li-items"><a href="">CATALOG</a></li>
+            <li class="li-items"><a href="">CONTACT</a></li>
+
+            <li class="li-items"><a href="">SHOP NOW</a></li>
+            <li class="li-items"><a href="">TRACK MY ORDER</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,731 @@
+html {
+	height:100%;
+}
+body {
+	height:100%;
+	margin:0px;
+}
+
+
+
+
+.MOSTTOPSECTION {
+    background-image:url("images/above.png"),
+     url("images/darkshade.png");
+background-repeat: no-repeat;
+/* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    /* height: 43rem; */
+    /* margin-: 4% 0; */
+    /* width: 100%;
+    height: 100%; */
+    
+    position: relative;
+    background-size:cover ;    
+
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1327px;
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+.sectionheading {
+    font-size: 25px;
+    font-family: Poppins-SemiBold;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.pagewidth {
+
+
+    margin: auto;
+    max-width: 1300px;
+
+}
+.marginleftright
+{
+    margin: 0 7%;
+}
+/*NAV BAR SECTION*/
+.wholenavbar {
+    white-space: nowrap;  
+    text-align: center;
+    height: 6rem;
+    padding-top: 2rem;
+}
+
+
+
+.logo {
+
+   display: inline;
+   float: left;
+}
+
+.iconsfovicon
+{
+/* margin: 0 4%; */
+}
+
+.faicon
+{
+    /* s */
+}
+
+/* Targetting ul */
+.nav-items {
+    list-style-type: none;
+display: inline;
+    /* Centralize the text in the .nav-items 
+                       class    */
+
+}
+.navitemsli
+{
+    display: inline;
+}
+
+/* Targettting li */
+.nav-itemsli {
+    display: flex;
+}
+
+/* Targetting ul */
+
+
+.navsize {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.iconcollection {
+    list-style-type: none;
+    display: inline;
+}
+
+/* Targetting li */
+.singleicon {
+
+    float: right;
+
+}
+.iconsfovicon
+{
+    float: right;
+}
+
+/* FRONT TOP SECTION */
+#topSection div {
+
+    text-align: left;
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(Fonts/Poppins-Light.ttf);
+}
+
+/*This is ShopOutlet*/
+.toptext {
+    font-size: 15px;
+    font-family: "Poppins-Light";
+}
+
+.first {
+
+    line-height: 4;
+}
+
+/*This is Really Good Quality*/
+
+.secondtext {
+    font-size: 30px;
+    font-family: "Poppins-Light";
+}
+
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url(Fonts/Poppins-ExtraBold.ttf);
+}
+
+.thirdtext {
+    font-size: 60px;
+    font-family: Poppins-ExtraBold;
+}
+
+.explorethecollection {
+
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Parent Container */
+.imagecontainer
+{
+    float: right;
+
+}
+.imagecolumn2
+{
+    width: 100%;
+    height: 100%;
+}
+.imagediv
+{
+    width: 40%;
+    height: 40%;
+}
+
+            /* IMAGE STACKING IN THE TOP SECTION */
+.child{
+position: absolute;
+/* */
+
+}
+.helmet
+{
+
+    right: 289px;
+    top: 11rem;
+    z-index: -1;
+    height: 254px;
+    width: 220px;
+}
+
+.watch
+{
+    z-index: 1;
+    top: 305px;
+    left: 9rem;
+    width: 120px;
+    height: 139px;
+  
+
+}
+.cap
+{
+    z-index: 2;
+    left: 15rem;
+    top: 17rem;
+    width: 304px;
+}
+.jug
+{
+    top: 10px;
+    /* right: 7rem; */
+    right: 1rem;
+}
+.column1
+{
+
+}
+.column2
+{
+}
+
+/* FEATURE SECTION */
+#FeaturedSection {
+    text-align: center;
+    color: white;
+    margin: 4% 0;
+}
+
+
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+.heading {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: Poppins-SemiBold;
+    margin: 2% 0;
+}
+
+.feature-grid-container {
+    display: grid;
+    grid-template-columns: 31.33% 31.33% 31.33%;
+    grid-template-rows: auto;
+    column-gap: 3%;
+
+}
+
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+.feature-cardcontent div img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-cardcontent {
+    position: relative;
+
+}
+
+.textbutton {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+.aromadiffuser
+{font-family: "Poppins-SemiBold";
+    color: white;
+    font-size: 20px;
+
+}
+
+.feature-cardcontent div p {
+    font-family: "Poppins-SemiBold";
+    font-size: 20px;
+
+}
+
+.feature-cardcontent div button {
+    font-family: "Poppins-SemiBold";
+    font-size: 15px;
+    padding: 2% 5%;
+    color: white;
+    background-color: #000000;
+
+}
+
+
+
+
+
+/*Best seller section*/
+#bestsellersection {
+    /* margin: 10% 0; */
+    background-color: rgb(255, 255, 255);
+    margin: 4% 0;
+}
+
+
+
+
+.cards {
+    width: 25%;
+    display: inline-block;
+
+
+    margin: 0;
+    /* For positioning of the text and the button */
+
+}
+
+.middlecard {
+    margin: 0 138px;
+}
+
+/* For image to be fitted in the card */
+.image img {
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards2 {
+    width: 19.75%;
+    display: inline-block;
+
+    /* For positioning of the text and the button */
+    margin: 4% 0;
+
+}
+
+/* For image to be fitted in the card */
+.image img {
+    width: 100%;
+}
+
+.title1 {
+    text-align: left;
+}
+
+
+.aboutiamge img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grid-container {
+
+    display: grid;
+    /* Width of each column */
+    grid-template-columns: 50% 50%;
+    /* Height of each row */
+    grid-template-rows: auto;
+
+    gap: 0;
+    background-color: #ffffff;
+}
+
+/*FIRST COLUMN HEIGHT*/
+.grid-container .firstcolumn
+{
+    /* height: 395px; */
+}
+.grid-container .secondcolumn
+{
+    /* height: 315px; */
+    padding: 40px;
+}
+.grid-container .firstcolumn img {
+width: 100%;
+height: 394px;
+}
+
+.grid-container .secondcolumn {
+    color: rgb(0, 0, 0);
+    /* padding: 4%; */
+}
+.toptext
+{
+    line-height: 2;
+}
+#aboutoutletssection {
+
+    background-image: url("images/AboutOutletsBackground.png");
+
+    /* padding-bottom: 60px; */
+    /* margin: 4% 0; */
+    padding: 4% 0;
+}
+
+
+.grid-container2 {
+    display: grid;
+    /* Width of each column */
+    grid-template-columns: auto auto auto auto;
+    /* Height of each row */
+    grid-template-rows: auto;
+
+    gap: 0;
+    background-color: #ffffff;
+}
+
+
+
+/*BEST SELLER SECTION*/
+.grid-container3 {
+
+    display: grid;
+    /* Width of each column */
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    /* Height of each row */
+    grid-template-rows: auto;
+
+    column-gap: 2%;
+    row-gap: 2%;
+    background-color: #ffffff;
+
+}
+
+
+.bestseller {
+    width: 100%;
+
+}
+
+.discription {
+    font-size: 15px;
+
+}
+
+.rating {
+    font-size: 13px;
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(Fonts/Poppins-SemiBold.ttf);
+}
+
+.price {
+    font-size: 17px;
+    font-family: "Poppins-SemiBold";
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(Fonts/Poppins-Bold.ttf);
+}
+
+.poppinbold {
+    font-size: 18px;
+    font-family: "Poppins-Bold";
+    line-height: 3;
+}
+
+/*Home section CSS*/
+#FooterSection {
+/* margin-top: 4% 0; */
+    background-color: black;
+      padding-top:3rem 
+    /*padding-bottom: 0.5%; */
+}
+
+.footsecondcolumn {
+    color: #ffffff;
+    background-color: black;
+}
+
+.footthirdcolumn {
+    color: #ffffff;
+    list-style: none;
+    background-color: black;
+
+}
+
+.footthirdcolumn ul li {
+    list-style-type: none;
+    font-size: 15px;
+    font-family: "Poppins-Light";
+}
+
+.footthirdcolumn ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none
+}
+
+.helpcss
+{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.helptext
+{
+    line-height: 1.5;
+    margin-top:15px ;
+}
+
+
+.footfourthcolumn {
+    color: #ffffff;
+    list-style: none;
+    background-color: black;
+}
+
+.footfourthcolumn ul li {
+    list-style-type: none;
+    font-size: 15px;
+    font-family: "Poppins-Light";
+}
+
+.footfourthcolumn ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none
+}
+
+
+
+
+
+/* .grid-container4 {
+    display: grid;
+   
+    grid-template-columns: auto auto auto auto;
+   
+    grid-template-rows: auto;
+    color: white;
+    gap: 0;
+    background-color: #000000;
+} */
+
+
+
+.ViewMore
+{
+    text-align: center;
+
+}
+.ViewMorebutton
+{
+    background-color: white;
+    color: #000000;
+    font-size:15px;
+    font-family: "Poppins-Light";
+    padding:8px 18px;
+    margin-top:32px ;
+} 
+
+.footerbottom
+{
+    color: white;
+    font-size: 15px;
+    font-family: "Poppins-Light";
+    display: flex;
+    margin-top: 4rem;
+
+}
+.footerbottom div img 
+{
+object-fit: contain;
+}
+@font-face {
+    font-family:"Poppins-Light" ;
+    src: url(Fonts/Poppins-Light.ttf);
+}
+.copyright
+{
+    font-size: 15px;
+    font-family:"Poppins-Light";
+
+}
+.imagecopyright
+{
+    margin-left: 31rem;
+}
+                /*TRACK MY ORDER SECTION*/
+#trackmyordersection
+{
+    text-align: center;
+    
+}
+
+#trackmyordersection h1
+{
+    font-size: 25px;
+    font-family: "Poppins-SemiBold"
+
+}
+#trackmyordersection div p
+{
+    font-size: 15px;
+    font-family: "Poppins-Light"
+
+}
+#trackmyordersection div p a
+{
+    text-decoration: none;
+    color: #000000;
+}
+#trackmyordersection div p a
+{
+    text-decoration: none;
+    color: #000000;
+}
+.trackmyordertext
+{
+    line-height: 3;
+}
+
+.grid-topsection {
+
+    display: grid;
+    /* Width of each column */
+    grid-template-columns: 48.75% 48.75%;
+    /* Height of each row */
+    grid-template-rows: 24rem;
+
+    column-gap: 2.5%;
+    background-color: #ffffff;
+}
+
+
+.grid-containertopsection
+{
+    background-color: transparent;
+    padding: 7% 0;
+}
+
+
+/*CONTACT US PAGE INPUT 
+ CSS*/
+/*form
+{
+    outline: black;
+}
+ .formcontainer
+ {
+    margin:0 4%;
+ }
+ */
+/* #FormSection {
+    text-align: center;
+
+  } */
+  
+  /* .FormSection input {
+    border-style: solid;
+    border-color: #000000;
+    margin: 10px 10px;
+    width: 310px;
+    height: 27px;
+  }
+  
+  .FormSection input {
+    border-style: solid;
+    border-color: #000000;
+    /* Proving margin to the input from top and bottom and 
+    left and right */
+    /*width: 310px;
+    height: 27px;*/
+ /* }
+  textarea
+  {
+width: auto;
+height: auto;
+  }
+   */

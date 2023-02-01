@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsivemenuecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+ <!----------------------Navigation Items------------------>
+        <!-- HAMBURGER ICON -->
+        <div class="nav-bar-toggler"onclick="myFunction(this)">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <div class="nav-logo">
+            <a href="" class="text-gray">
+              <img src="images/logo.png" alt="">
+            </a>
+        </div>
+       
+        <!-----------------------------HAMBURGER ICON-------------->
+        <div class="menu-items" id="hamitems">
+            <ul class="nav-items">
+                <li class="nav-links">
+                    <a href="">HOME</a>
+                </li>
+                <li class="nav-links">
+                    <a href="">CATALOG</a>
+                </li>
+                <li class="nav-links">
+                    <a href="">CONTACT</a>
+                </li>
+                <li class="nav-links">
+                    <a href="">SHOP NOW</a>
+                </li>
+                <li class="nav-links">
+                    <a href="">TRACK MY ORDER</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <!-------------------------------------------------------->
+
+
+        <!--ICONS-->
+        <div class="social">
+            <a href="" class=""><img src="images/user.png" alt=""></a>
+            <a href="" class=""><img src="images/cart.png" alt=""></a>
+            <a href="" class=""><img src="images/magnify.png" alt=""></a>
+
+        </div>
+        <!---->
+
+
+
+    </nav>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("images/darkshade.png");
+    background-size:cover ;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+
+
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.textlinks
+{
+    display: inline-block;
+}
+.imagelinks
+{
+    display: inline-block;
+    float: right;
+    justify-content: space-around;
+    display: flex;
+}
+.navigationlinks
+{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.pagewidth{
+    margin: 0 7%;
+}
+.anchotlinks
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}

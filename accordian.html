@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accoridan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- for icons plus minus font awesome-->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="accordian">
+  	  <div class="card">
+  	  	  <div class="card-header">
+  	  	  	 <h3>Heading One </h3>
+  	  	  	 <span class="fa fa-minus"></span>
+  	  	  </div>
+  	  	  <div class="card-body active">
+  	  	  	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  	  	  </div>
+  	  </div>
+
+  	  <div class="card">
+  	  	  <div class="card-header">
+  	  	  	 <h3>Heading Two </h3>
+  	  	  	 <span class="fa fa-plus"></span>
+  	  	  </div>
+  	  	  <div class="card-body">
+  	  	  	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  	  	  </div>
+  	  </div>
+  	  <div class="card">
+  	  	  <div class="card-header">
+  	  	  	 <h3>Heading Three </h3>
+  	  	  	 <span class="fa fa-plus"></span>
+  	  	  </div>
+  	  	  <div class="card-body">
+  	  	  	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  	  	  </div>
+  	  </div>
+  </div>
+
+
+<!-- jqurey code -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+	  $(".card-header").click(function(){
+       // self clicking close
+       if($(this).next(".card-body").hasClass("active")){
+         $(this).next(".card-body").removeClass("active").slideUp()
+        $(this).children("span").removeClass("fa-minus").addClass("fa-plus")	
+       }
+     else{
+	   $(".card .card-body").removeClass("active").slideUp()
+	   $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
+       $(this).next(".card-body").addClass("active").slideDown()
+        $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+      }
+	  })
+	})
+
+</script>
+
+
+</body>
+</html>

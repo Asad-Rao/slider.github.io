@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    nav {
+        position: relative;
+      }
+      .menu-btn {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: relative;
+        left: 0;
+        top: 100%;
+        transition: all 0.3s ease;
+        transform: translateY(-100%);
+      }
+      .menu--active {
+        transform: translateY(0);
+      }
+      .sub-menu {
+        display: none;
+      }
+      
+      
+</style>
+<body>
+    <nav>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a>
+            <ul class="sub-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('menu--active');
+        });
+        
+
+      </script>
+</body>
+</html>
