@@ -32,36 +32,4 @@ $('.slideshow-container').slick({
   dots: true,
   infinite: true,
   arrows : false,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-
-        adaptiveHeight: true,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-
-        adaptiveHeight: true,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-
-        adaptiveHeight: true,
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
 });
-
-
-
-
-
-
